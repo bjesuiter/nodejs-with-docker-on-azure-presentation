@@ -78,11 +78,27 @@
             <!-- BEGIN: Edit your slides -->
 
             <deckgo-slide-title>
-                <h1 slot="title">DeckDeckGo</h1>
+                <h1 slot="title">Improving our NodeJS Deployments</h1>
                 <div no-shadow slot="content">
-                    <h3>The Progressive Web App alternative for simple presentations 🚀</h3>
+                    <h3>Running NodeJS Server with Docker on Azure</h3>
                 </div>
             </deckgo-slide-title>
+
+            <deckgo-slide-content style="--background: #222; --color: var(--ion-color-tertiary); --ion-item-background: white;">
+                <h2 slot="title">"Old" Deployment</h2>
+                <ion-img slot="content"
+                         src="assets/img/01-current-nodejs-deployment_simple.svg"
+                         style="transform: translateY(-120px) translateX(8px)"
+                ></ion-img>
+            </deckgo-slide-content>
+
+            <deckgo-gif src="https://media.giphy.com/media/krhB8ydCQiYZq/giphy.gif"
+                        alt="KUDU is magic!"
+                        fullscreen="true">
+                <h1 slot="header"> KUDU </h1>
+            </deckgo-gif>
+
+<!--            Old example content :) -->
 
             <deckgo-slide-content style="--background: white; --color: var(--ion-color-tertiary); --ion-item-background: white;">
                 <h2 slot="title">Features</h2>
