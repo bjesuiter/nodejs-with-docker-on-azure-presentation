@@ -66,6 +66,16 @@
         ion-app.loading {
             display: none;
         }
+
+        deckgo-slide-content {
+            --background: #222222;
+            --color: var(--ion-color-tertiary);
+            --ion-item-background: transparent;
+        }
+
+        ion-item {
+            color: white;
+        }
     </style>
 
 </head>
@@ -84,16 +94,15 @@
                 </div>
             </deckgo-slide-title>
 
-            <deckgo-slide-content style="--background: #222; --color: var(--ion-color-tertiary); --ion-item-background: white;">
+            <deckgo-slide-content>
                 <h2 slot="title">"Old" Deployment</h2>
                 <ion-img slot="content"
-                         src="assets/img/01-current-nodejs-deployment_simple.svg"
+                         src="assets/img/nodejs-on-azure-01-simple-node-deployment.svg"
                          style="transform: translateY(-120px) translateX(8px)"
                 ></ion-img>
             </deckgo-slide-content>
 
-            <deckgo-slide-content
-                    style="--background: #222; --color: var(--ion-color-tertiary); --ion-item-background: white;">
+            <deckgo-slide-content>
                 <h2 slot="title">But KUDU does ...</h2>
                 <ion-img slot="content"
                          style="margin: auto;height: 80%; width: 100%"
@@ -101,6 +110,29 @@
                 </ion-img>
             </deckgo-slide-content>
 
+            <deckgo-slide-content>
+                <h2 slot="title">KUDU Workflow</h2>
+                <ion-list slot="content" lines="none" padding-top>
+                    <ion-item>
+                        <ion-label text-wrap>⏱️ KUDU ist Langsam => Project Type Detection</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label text-wrap>🛠 KUDU muss Typescript Projekte selbst kompilieren => </ion-label>
+                    </ion-item>
+                </ion-list>
+            </deckgo-slide-content>
+
+            <deckgo-slide-content>
+                <h2 slot="title">KUDU Problems</h2>
+                <ion-list slot="content" lines="none" padding-top>
+                    <ion-item>
+                        <ion-label text-wrap>⏱️ KUDU ist Langsam => Project Type Detection</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label text-wrap>🛠 KUDU muss Typescript Projekte selbst kompilieren => </ion-label>
+                    </ion-item>
+                </ion-list>
+            </deckgo-slide-content>
 
             <!--            Old example content :) -->
 
