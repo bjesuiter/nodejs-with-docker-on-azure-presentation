@@ -98,12 +98,40 @@
                 <h2 slot="title">Altes Node Deployment</h2>
                 <ion-img slot="content"
                          src="assets/img/nodejs-on-azure-01-simple-node-deployment.svg"
-                         style="transform: translateY(-120px) translateX(8px)"
+                         style="transform: translateY(-90px)"
                 ></ion-img>
             </deckgo-slide-content>
 
+            <deckgo-slide-title reveal="true">
+                <h2 slot="title">Zwei große Probleme...</h2>
+                <div no-shadow slot="content">
+                    <span>Git als Deployment Ziel &nbsp;</span>
+                    <span>& &nbsp; KUDU</span>
+                </div>
+                <p slot="notes">
+                    Problem: Typescript muss kompiliert werden,  <br>
+                    aber
+                </p>
+            </deckgo-slide-title>
+
+<!--            <deckgo-slide-content>-->
+<!--                <h2 slot="title">1. Git als Deployment Ziel <br> für Typescript</h2>-->
+<!--&lt;!&ndash;                TODO: Neue Grafik für Typescript Node Deployment&ndash;&gt;-->
+<!--                <ion-img slot="content"-->
+<!--                         src="assets/img/nodejs-on-azure-01-simple-node-deployment.svg"-->
+<!--                         style="transform: translateY(-20px)"-->
+<!--                ></ion-img>-->
+
+<!--                <p slot="notes">-->
+<!--                    Problem: Typescript Deployment <br>-->
+<!--                    nachher bauen (im Azure Git / Kudu): geht nicht, weil Absturz wegen zu wenig RAM. <br>-->
+<!--                    vorher bauen: geht, Kudu braucht aber eine package.json für die Repository Erkennung <br>-->
+<!--                    Einfaches pushen vom DIST Ordner per FTP: Triggert KUDU nicht => Server startet nicht.-->
+<!--                </p>-->
+<!--            </deckgo-slide-content>-->
+
             <deckgo-slide-content>
-                <h2 slot="title">But KUDU does ...</h2>
+                <h2 slot="title">KUDU macht ...</h2>
                 <ion-img slot="content"
                          style="margin: auto;height: 80%; width: 100%"
                          src="https://media.giphy.com/media/krhB8ydCQiYZq/giphy.gif">
@@ -111,27 +139,13 @@
             </deckgo-slide-content>
 
             <deckgo-slide-content>
-                <h2 slot="title">KUDU Workflow</h2>
-                <ion-list slot="content" lines="none" padding-top>
-                    <ion-item>
-                        <ion-label text-wrap>⏱️ KUDU ist Langsam => Project Type Detection</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label text-wrap>🛠 KUDU muss Typescript Projekte selbst kompilieren => </ion-label>
-                    </ion-item>
-                </ion-list>
-            </deckgo-slide-content>
-
-            <deckgo-slide-content>
-                <h2 slot="title">KUDU Problems</h2>
-                <ion-list slot="content" lines="none" padding-top>
-                    <ion-item>
-                        <ion-label text-wrap>⏱️ KUDU ist Langsam => Project Type Detection</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label text-wrap>🛠 KUDU muss Typescript Projekte selbst kompilieren => </ion-label>
-                    </ion-item>
-                </ion-list>
+                <h2 slot="title">Bessere Lösung?</h2>
+                <ion-img slot="content"
+                         style="margin: auto;height: 80%; width: 100%"
+                         src="https://media.giphy.com/media/14mgxYFJHXGmoo/giphy.gif">
+                </ion-img>
+                <p slot="notes">
+                </p>
             </deckgo-slide-content>
 
             <!--            Old example content :) -->
