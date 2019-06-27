@@ -95,6 +95,12 @@
             padding-right: 10px;
         }
 
+        .code {
+            font-family: monospace;
+            font-size: 0.8em;
+            font-weight: lighter;
+        }
+
         /*.demo-steps ion-item ion-label::before {*/
         /*    counter-increment: section;*/
         /*    content: counter(section) ". ";*/
@@ -236,6 +242,33 @@
                 <p slot="notes">
                     - Alle Sourcen sind fertig kompiliert im Image gespeichert =>
                     keine Probleme mit npm packages installieren auf azure
+                </p>
+            </deckgo-slide-content>
+
+            <deckgo-slide-content>
+                <h2 slot="title">Logs anzeigen</h2>
+                <div slot="content" style="color: white">
+                    <strong>Azure Command Line Login </strong>
+                    <p class="code">
+                        az login <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --service-principal <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --username b59b5a83-6d56-4041-b934-9b14c5234431 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --password pYZEgS3fs6nGuMPD<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --tenant 683db461-a5df-405d-aba6-847414d66075<br>
+                    </p>
+
+                    <strong>Download Logs</strong>
+                    <p class="code">az webapp log download <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --resource-group de-iot-docker-azure-example <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --name de-iot-docker-demo</p>
+
+                    <strong>Stream Logs</strong>
+                    <p class="code">az webapp log tail <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --resource-group de-iot-docker-azure-example <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; --name de-iot-docker-demo --slot dev</p>
+                </div>
+                <p slot="notes">
+                    Getting Logs
                 </p>
             </deckgo-slide-content>
 
