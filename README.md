@@ -4,6 +4,8 @@ A deckdeckgo presentation on how to run nodejs server as docker-container on Azu
 
 Hosted on Azure: https://dockeronazure.z6.web.core.windows.net/
 
+Setup with these instructions: https://4sysops.com/archives/create-a-static-website-in-azure/
+
 # DeckDeckGo - Starter Kit
 
 Create a PWA presentation using Web Components, [Ionic](http://ionicframework.com) components and HTML or Markdown 🚀
