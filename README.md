@@ -1,5 +1,7 @@
 # NodeJS Server with Docker on Azure 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bjesuiter/nodejs-with-docker-on-azure-presentation.svg)](https://greenkeeper.io/)
+
 A deckdeckgo presentation on how to run nodejs server as docker-container on Azure WebApps
 
 Hosted on Azure: https://dockeronazure.z6.web.core.windows.net/
